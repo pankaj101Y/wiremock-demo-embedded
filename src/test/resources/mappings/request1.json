@@ -1,0 +1,23 @@
+{
+  "id" : "40a536da-647f-46e6-9cf6-ba19c12df237",
+  "request" : {
+    "url" : "/api/files/bulk_request",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\n  \"country\":\"india\",\n  \"city\":\"${json-unit.ignore}\"\n}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "response1.json",
+    "headers": {
+      "Content-type": "application/json"
+    }
+  },
+  "uuid" : "40a536da-647f-46e6-9cf6-ba19c12df237",
+  "persistent" : true,
+  "insertionIndex" : 0,
+  "priority": 2
+}

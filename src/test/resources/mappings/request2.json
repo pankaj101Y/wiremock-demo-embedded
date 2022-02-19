@@ -1,0 +1,21 @@
+{
+  "id" : "6533f69f-934e-3598-8a0b-f8a973061b11",
+  "request" : {
+    "url" : "/api/files/bulk_request",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\n    \"country\":\"india\",\n    \"city\":\"new delhi\"\n}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "response2.json",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "6533f69f-934e-3598-8a0b-f8a973061b11",
+  "priority": 3
+}
